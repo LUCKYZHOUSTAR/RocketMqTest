@@ -38,7 +38,6 @@ public class RemotingHelper {
         return isa;
     }
 
-    //TODO 少写方法
 
     public static String parseChannelRemoteAddr(Channel channel) {
         if (null == channel) {
