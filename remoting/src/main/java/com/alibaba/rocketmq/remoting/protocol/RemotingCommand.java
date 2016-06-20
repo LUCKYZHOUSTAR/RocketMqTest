@@ -213,7 +213,7 @@ public class RemotingCommand {
         byte[] headerData = buildHeader();
         length += headerData.length;
         length += bodyLength;
-        //        length=4+bodylength+headerData+4
+        //        length=4+bodylength+headerData+4-bodyLength
         ByteBuffer result = ByteBuffer.allocate(4 + length - bodyLength);
         result.putInt(length);
         result.putInt(headerData.length);

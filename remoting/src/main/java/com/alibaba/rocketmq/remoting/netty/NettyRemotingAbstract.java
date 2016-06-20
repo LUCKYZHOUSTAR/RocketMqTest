@@ -230,7 +230,6 @@ public abstract class NettyRemotingAbstract {
                 } finally {
                     rep.release();
                 }
-
                 plog.warn("remove timeout request, " + rep);
             }
         }
